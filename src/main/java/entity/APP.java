@@ -1,14 +1,12 @@
 package entity;
 
-import storage.ClientsDAO;
+import storage.dao.ClientsDAO;
 import storage.DaoFactory;
-
-import java.util.List;
 
 public class APP {
      public static void main(String[] args) {
         ClientsDAO clientsDAO= DaoFactory.INSTANCE.getClientsDAO();
-         List<Clients> clients = clientsDAO.getAll();
+        Clients clients = clientsDAO.getById(1L);
          System.out.println(clients);
     }
 }

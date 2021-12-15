@@ -1,10 +1,14 @@
 package storage;
 
 import entity.Clients;
+import exeption.EntityNotFoundException;
+import exeption.EntityUndeletableException;
 import org.springframework.dao.DataAccessException;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
+import storage.dao.ClientsDAO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -35,6 +39,7 @@ public class MysqlClientsDao implements ClientsDAO {
             }
         });
     }
+
 
     public Clients getById(long id) throws EntityNotFoundException {
         try {
@@ -83,7 +88,8 @@ public class MysqlClientsDao implements ClientsDAO {
                     clients.getCislo()
             );
         } else { //update
-            String sql = "UPDATE clients SET meno = ?, priezvisko = ?,dat_nar = ?, adressa = ?, cislo = ? WHERE id = ? ";
+
+            String sql = "UPDATE clients SET meno = ?, priezvisko = ?,dat_nar = ?, adressa = ?, cislo = ? WHERE id = 1 ";
             int changed = jdbcTemplate.update(sql, clients.getMeno(), clients.getPriezvisko(), clients.getDat_nar(), clients.getAdressa(), clients.getCislo());
             if (changed == 1) {
                 return clients;
@@ -95,14 +101,17 @@ public class MysqlClientsDao implements ClientsDAO {
 
     }
 
-
-
-
-    public Clients delete(long id) throws EntityNotFoundException {
+    public Clients delete(long id) throws EntityNotFoundException, EntityUndeletableException {
         Clients clients = getById(id);
-        String sql = "DELETE FROM clients SET  WHERE id = " +id;
-        int changed = jdbcTemplate.update(sql);
-        return clients;
+
+        try {
+
+            jdbcTemplate.update("DELETE FROM clients WHERE id = " + id);
+        } catch (DataIntegrityViolationException e) {
+            		throw new EntityUndeletableException(
+            				"Client " + clients + " is a part of some predaj, cannot be deleted", e);
+            		}
+            return clients;
+        }
     }
 
-}

@@ -3,11 +3,20 @@ package storage;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
+import storage.dao.ClientsDAO;
+import storage.dao.HotelDAO;
+import storage.dao.PredajDAO;
+import storage.dao.TourDAO;
 
 public enum DaoFactory {
     INSTANCE;
 
     private ClientsDAO clientsDAO;
+    private HotelDAO hotelDAO;
+    private PredajDAO predajDAO;
+    private TourDAO tourDAO;
+
+
     private boolean testing =   false;
 
     public void testing() {
@@ -19,6 +28,26 @@ public enum DaoFactory {
             clientsDAO = new MysqlClientsDao(getJdbcTemplate());
         }
         return clientsDAO;
+    }
+    public HotelDAO getHotelDAO(){
+        if (hotelDAO == null) {
+            hotelDAO = new MysqlHotelDao(getJdbcTemplate());
+        }
+        return hotelDAO;
+    }
+
+    public PredajDAO getPredajDAO(){
+        if (predajDAO == null) {
+            predajDAO = new MysqlPredajDao(getJdbcTemplate());
+        }
+        return predajDAO;
+
+    }
+    public TourDAO getTourDAO(){
+        if(tourDAO == null) {
+            tourDAO = new MysqlTourDao(getJdbcTemplate());
+        }
+        return tourDAO;
     }
 
     private JdbcTemplate jdbcTemplate;

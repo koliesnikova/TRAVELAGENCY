@@ -9,6 +9,11 @@ public class Clients {
     private Date dat_nar;
     private String adressa;
     private String cislo;
+
+    public Clients() {
+
+    }
+
     @Override
     public String toString() {
         return "Client{" +
@@ -32,10 +37,11 @@ public class Clients {
         this.cislo = cislo;
     }
 
-    public Clients(String meno, String priezvisko, String cislo) {
+    public Clients(String meno, String priezvisko) {
+
         this.meno = meno;
         this.priezvisko = priezvisko;
-        this.cislo = cislo;
+
     }
 
     public Long getId() {
