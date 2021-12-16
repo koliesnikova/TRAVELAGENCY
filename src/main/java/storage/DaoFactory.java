@@ -3,21 +3,21 @@ package storage;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
-import storage.dao.ClientsDAO;
-import storage.dao.HotelDAO;
-import storage.dao.PredajDAO;
-import storage.dao.TourDAO;
+import storage.dao.*;
 
 public enum DaoFactory {
     INSTANCE;
 
     private ClientsDAO clientsDAO;
-    private HotelDAO hotelDAO;
+
     private PredajDAO predajDAO;
     private TourDAO tourDAO;
+    private HotelDAO hotelDAO;
+    private Druh_jedlaDAO druhjedlaDAO;
+    private Type_umiestneniaDAO type_umiestneniaDAO;
+    private Type_tourDAO type_tourDAO;
 
-
-    private boolean testing =   false;
+    private boolean testing = false;
 
     public void testing() {
         testing = true;
@@ -29,25 +29,45 @@ public enum DaoFactory {
         }
         return clientsDAO;
     }
-    public HotelDAO getHotelDAO(){
-        if (hotelDAO == null) {
-            hotelDAO = new MysqlHotelDao(getJdbcTemplate());
-        }
-        return hotelDAO;
-    }
 
-    public PredajDAO getPredajDAO(){
+    public PredajDAO getPredajDAO() {
         if (predajDAO == null) {
             predajDAO = new MysqlPredajDao(getJdbcTemplate());
         }
         return predajDAO;
 
     }
-    public TourDAO getTourDAO(){
-        if(tourDAO == null) {
+
+    public TourDAO getTourDAO() {
+        if (tourDAO == null) {
             tourDAO = new MysqlTourDao(getJdbcTemplate());
         }
         return tourDAO;
+    }
+    public Druh_jedlaDAO getDruh_jedlaDAO(){
+        if (druhjedlaDAO==null){
+            druhjedlaDAO = new MysqlDruh_jedlaDao(getJdbcTemplate());
+        }
+        return druhjedlaDAO;
+    }
+    public HotelDAO getHotelDAO(){
+        if (hotelDAO == null){
+            hotelDAO = new MysqlHotelDao(getJdbcTemplate());
+        }
+        return hotelDAO;
+    }
+    public Type_tourDAO getType_tourDAO(){
+        if (type_tourDAO == null) {
+            type_tourDAO = new MysqlType_tourDao(getJdbcTemplate());
+        }
+        return type_tourDAO;
+    }
+    public Type_umiestneniaDAO getType_umiestneniaDAO(){
+        if (type_umiestneniaDAO == null){
+            type_umiestneniaDAO = new MysqlType_umiestneniaDao(getJdbcTemplate());
+
+        }
+        return type_umiestneniaDAO;
     }
 
     private JdbcTemplate jdbcTemplate;

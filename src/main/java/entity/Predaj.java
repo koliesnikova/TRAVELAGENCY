@@ -17,6 +17,11 @@ public class Predaj {
         this.tour = tour;
     }
 
+    public Predaj() {
+
+    }
+
+
     @Override
     public String toString() {
         return "Predaj{" +
