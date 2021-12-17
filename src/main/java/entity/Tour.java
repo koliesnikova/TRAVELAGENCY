@@ -8,7 +8,41 @@ public class Tour {
     private Date date_begin;
     private Date date_end;
     private Druh_jedla druh_jedla;
-    private Integer hotel;
+    private Hotel hotel;
+
+    public Tour(Date date_begin, Date date_end) {
+        this.date_begin = date_begin;
+        this.date_end = date_end;
+        this.hotel = hotel;
+    }
+
+    public Tour(Long id, Type_tour type_tour, Date date_begin, Date date_end, Druh_jedla druh_jedla, Hotel hotel) {
+        this.id = id;
+        this.type_tour = type_tour;
+        this.date_begin = date_begin;
+        this.date_end = date_end;
+        this.druh_jedla = druh_jedla;
+        this.hotel = hotel;
+    }
+
+    public Tour() {
+
+    }
+
+    public Tour(Date date, Date date2, Long id) {
+    }
+
+    @Override
+    public String toString() {
+        return "Tour{" +
+                "id=" + id +
+                ", type_tour=" + type_tour +
+                ", date_begin=" + date_begin +
+                ", date_end=" + date_end +
+                ", druh_jedla=" + druh_jedla +
+                ", hotel=" + hotel +
+                '}';
+    }
 
     public Long getId() {
         return id;
@@ -50,20 +84,11 @@ public class Tour {
         this.druh_jedla = druh_jedla;
     }
 
-    public Integer getHotel() {
+    public Hotel getHotel() {
         return hotel;
     }
 
-    public void setHotel(Integer hotel) {
-        this.hotel = hotel;
-    }
-
-    public Tour(Long id, Type_tour type_tour, Date date_begin, Date date_end, Druh_jedla druh_jedla, Integer hotel) {
-        this.id = id;
-        this.type_tour = type_tour;
-        this.date_begin = date_begin;
-        this.date_end = date_end;
-        this.druh_jedla = druh_jedla;
+    public void setHotel(Hotel hotel) {
         this.hotel = hotel;
     }
 }

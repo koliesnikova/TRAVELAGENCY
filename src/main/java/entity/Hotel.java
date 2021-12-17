@@ -11,6 +11,19 @@ public class Hotel {
     private String krajina;
     private String mesto;
 
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "id=" + id +
+                ", hotel_name='" + hotel_name + '\'' +
+                ", stars=" + stars +
+                ", type_umiestnenia=" + type_umiestnenia +
+                ", price=" + price +
+                ", krajina='" + krajina + '\'' +
+                ", mesto='" + mesto + '\'' +
+                '}';
+    }
+
     public Hotel(Long id, String hotel_name, Integer stars, Type_umiestnenia type_umiestnenia, Float price, String krajina, String mesto) {
         this.id = id;
         this.hotel_name = hotel_name;
@@ -19,6 +32,10 @@ public class Hotel {
         this.price = price;
         this.krajina = krajina;
         this.mesto = mesto;
+    }
+
+    public Hotel() {
+
     }
 
     public Long getId() {

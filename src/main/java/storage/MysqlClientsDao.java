@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import storage.dao.ClientsDAO;
+import storage.dao.PredajDAO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -67,8 +68,10 @@ public class MysqlClientsDao implements ClientsDAO {
             );
         } else { //update
 
-            String sql = "UPDATE clients SET meno = ?, priezvisko = ?,dat_nar = ?, adressa = ?, cislo = ? WHERE id = 1 ";
-            int changed = jdbcTemplate.update(sql, clients.getMeno(), clients.getPriezvisko(), clients.getDat_nar(), clients.getAdressa(), clients.getCislo());
+            String sql = "UPDATE clients SET meno = ?, priezvisko = ?,dat_nar = ?, adressa = ?, cislo = ? WHERE id = ?";
+
+            int changed = jdbcTemplate.update(sql, clients.getMeno(), clients.getPriezvisko(), clients.getDat_nar(), clients.getAdressa(), clients.getCislo(),clients.getId());
+
             if (changed == 1) {
                 return clients;
             } else {
@@ -81,6 +84,8 @@ public class MysqlClientsDao implements ClientsDAO {
 
     public Clients delete(long id) throws EntityNotFoundException, EntityUndeletableException {
         Clients clients = getById(id);
+        PredajDAO predajDAO = DaoFactory.INSTANCE.getPredajDAO();
+        predajDAO.deleteAllByClient(clients);
 
         try {
 

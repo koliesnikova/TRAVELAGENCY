@@ -9,6 +9,10 @@ public class Type_tour {
         this.type = type;
     }
 
+    public Type_tour() {
+
+    }
+
     @Override
     public String toString() {
         return "Type_tour{" +
@@ -22,7 +26,7 @@ public class Type_tour {
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.id = this.id;
     }
 
     public String getType() {

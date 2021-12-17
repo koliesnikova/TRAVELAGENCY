@@ -33,6 +33,14 @@ public class Predaj {
                 '}';
     }
 
+    public Clients getClient() {
+        return client;
+    }
+
+    public Tour getTour() {
+        return tour;
+    }
+
     public void setClient(Clients client) {
         this.client = client;
     }

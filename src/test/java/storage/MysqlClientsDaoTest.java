@@ -7,8 +7,6 @@ import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import storage.dao.ClientsDAO;
-
-
 import java.util.Date;
 import java.util.List;
 
@@ -78,7 +76,7 @@ public class MysqlClientsDaoTest {
     @Test
     public void testDelete() {
         Date date = new Date(2000,10,10);
-        Clients clients= new Clients(1L,"Inserted","Inserted",date,"moscow","435353");
+        Clients clients= new Clients(5L,"Inserted","Inserted",date,"moscow","435353");
 
         Long id = clientsDAO.save(clients).getId();
         clients.setId(id);
