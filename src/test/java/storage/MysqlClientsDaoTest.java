@@ -1,16 +1,19 @@
 package storage;
 
-import entity.Clients;
-import exeption.EntityNotFoundException;
-import exeption.EntityUndeletableException;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import sk.upjs.entity.Clients;
+import sk.upjs.exeption.EntityNotFoundException;
+import sk.upjs.exeption.EntityUndeletableException;
+//import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import storage.dao.ClientsDAO;
+import sk.upjs.storage.DaoFactory;
+import sk.upjs.storage.dao.ClientsDAO;
 import java.util.Date;
 import java.util.List;
 
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MysqlClientsDaoTest {
     private ClientsDAO clientsDAO;
@@ -43,7 +46,7 @@ public class MysqlClientsDaoTest {
         assertNotNull(clientsDAO.getAll());
     }
 
-    @Test(expected = EntityNotFoundException.class)
+  //  @Test(expected = EntityNotFoundException.class)
     public void testGetById() {
         clientsDAO.getById(-1);
 
@@ -51,17 +54,17 @@ public class MysqlClientsDaoTest {
 
     @Test
    public void testUpdate() {
-      Clients clients = clientsDAO.getById(1L);
+      Clients clients = clientsDAO.getById(2L);
       clients.setMeno("test");
       clientsDAO.save(clients);
-      Clients updated = clientsDAO.getById(1L);
+      Clients updated = clientsDAO.getById(2L);
       assertEquals(updated.getMeno(),"test");
     }
 
     @Test
     public void testInsert(){
         Date date = new Date(2000,10,10);
-        Clients insert = clientsDAO.save(new Clients(12L,"Inserted","Inserted",date,"moscow","435353"));
+        Clients insert = clientsDAO.save(new Clients("Inserted","Inserted",date,"moscow","435353"));
         assertNotNull(insert);
     }
 
@@ -76,7 +79,7 @@ public class MysqlClientsDaoTest {
     @Test
     public void testDelete() {
         Date date = new Date(2000,10,10);
-        Clients clients= new Clients(5L,"Inserted","Inserted",date,"moscow","435353");
+        Clients clients= new Clients(11L,"Inserted","Inserted",date,"moscow","435353");
 
         Long id = clientsDAO.save(clients).getId();
         clients.setId(id);

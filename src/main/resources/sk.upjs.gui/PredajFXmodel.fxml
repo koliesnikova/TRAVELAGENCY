@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="853.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="102.0" prefWidth="854.0" style="-fx-background-color: #312E2E;" AnchorPane.bottomAnchor="448.6" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-0.39999999999997726" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="tour" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#goTour" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: #312E2E;" text="TOUR" textFill="WHITE" AnchorPane.bottomAnchor="26.199999999999974" AnchorPane.leftAnchor="13.999999999999972" AnchorPane.rightAnchor="726.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="clients" layoutX="156.0" layoutY="25.0" mnemonicParsing="false" onAction="#goClients" style="-fx-background-color: #312E2E;" text="CLIENTS" textFill="WHITE" AnchorPane.bottomAnchor="26.199999999999974" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="578.4" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="predaj" layoutX="306.0" layoutY="25.0" mnemonicParsing="false" onAction="#goPredaj" style="-fx-background-color: #312E2E;" text="PREDAJ" textFill="WHITE" AnchorPane.bottomAnchor="26.199999999999974" AnchorPane.leftAnchor="306.0" AnchorPane.rightAnchor="434.79999999999995" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="oProjekte" layoutX="669.0" layoutY="25.0" mnemonicParsing="false" onAction="#goOprojekte" style="-fx-background-color: #FFA31A;" text="O PROJEKTE" textFill="WHITE" AnchorPane.bottomAnchor="26.199999999999974" AnchorPane.leftAnchor="669.0" AnchorPane.rightAnchor="22.99999999999997" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="info" layoutX="452.0" layoutY="25.0" mnemonicParsing="false" onAction="#goInfo" style="-fx-background-color: #312E2E;" text="INFO" textFill="WHITE" AnchorPane.bottomAnchor="26.199999999999974" AnchorPane.leftAnchor="452.0" AnchorPane.rightAnchor="316.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="delete" layoutX="556.0" layoutY="182.0" mnemonicParsing="false" onAction="#DeletePredaj" prefHeight="31.0" prefWidth="162.0" style="-fx-background-color: #FFA31A;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="add" layoutX="556.0" layoutY="143.0" mnemonicParsing="false" onAction="#addPredaj" prefHeight="31.0" prefWidth="162.0" style="-fx-background-color: #FFA31A;" text="ADD" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="update" layoutX="556.0" layoutY="222.0" mnemonicParsing="false" onAction="#updatePredaj" prefHeight="31.0" prefWidth="162.0" style="-fx-background-color: #FFA31A;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label layoutX="-57.0" layoutY="-28.0" text="Label" />
+      <Label layoutX="14.0" layoutY="134.0" prefHeight="38.0" prefWidth="120.0" text="PREDAJ" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="client_field" layoutX="180.0" layoutY="159.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #FFA31A;" />
+      <TextField fx:id="date_field" layoutX="180.0" layoutY="200.0" style="-fx-background-color: #FFA31A;" />
+      <TextField fx:id="price_field" layoutX="384.0" layoutY="122.0" style="-fx-background-color: #FFA31A;" />
+      <TextField fx:id="tour_field" layoutX="384.0" layoutY="159.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #FFA31A;" />
+      <Label layoutX="144.0" layoutY="121.0" prefHeight="26.0" prefWidth="14.0" text="id" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="162.0" prefHeight="18.0" prefWidth="34.0" text="client" textFill="#ffa31a">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="200.0" text="date" textFill="#fafafa">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="124.0" text="price" textFill="#ffa31a">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="161.0" text="tour" textFill="#fafafa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="all" layoutX="631.0" layoutY="104.0" mnemonicParsing="false" onAction="#showall" style="-fx-background-color: #FFA31A;" text="SHOW ALL" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="search" layoutX="556.0" layoutY="105.0" mnemonicParsing="false" onAction="#byid" style="-fx-background-color: #FFA31A;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="predajTour" layoutY="261.0" prefHeight="290.0" prefWidth="854.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="-0.39999999999997726" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.3999999999999773" AnchorPane.topAnchor="261.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="clientColumn" prefWidth="75.0" text="client" />
+            <TableColumn fx:id="dateColumn" prefWidth="75.0" text="date" />
+            <TableColumn fx:id="priceColumn" prefWidth="75.0" text="price" />
+            <TableColumn fx:id="tourColmn" prefWidth="75.0" text="tour" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="id_field" layoutX="180.0" layoutY="122.0" style="-fx-background-color: #FFA31A;" />
+      <ComboBox fx:id="client_combo" layoutX="210.0" layoutY="160.0" maxHeight="26.0" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: #FFA31A;" />
+      <ComboBox fx:id="tour_combo" layoutX="412.0" layoutY="159.0" prefHeight="29.0" prefWidth="132.0" style="-fx-background-color: #FFA31A;" />
+   </children>
+</AnchorPane>

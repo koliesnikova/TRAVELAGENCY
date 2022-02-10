@@ -1,15 +1,18 @@
 package storage;
 
-import entity.Druh_jedla;
-import entity.Type_tour;
-import exeption.EntityNotFoundException;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import storage.dao.Druh_jedlaDAO;
-import storage.dao.Type_umiestneniaDAO;
+import org.junit.jupiter.api.Test;
+import sk.upjs.entity.Druh_jedla;
+import sk.upjs.entity.Hotel;
+import sk.upjs.entity.Type_tour;
+import sk.upjs.exeption.EntityNotFoundException;
 
-import static org.junit.Assert.*;
+import sk.upjs.storage.DaoFactory;
+import sk.upjs.storage.dao.Druh_jedlaDAO;
+
+import java.util.List;
+
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MysqlDruh_jedlaTest {
     private Druh_jedlaDAO druh_jedlaDAO;
@@ -17,19 +20,14 @@ public class MysqlDruh_jedlaTest {
         DaoFactory.INSTANCE.testing();
         druh_jedlaDAO = DaoFactory.INSTANCE.getDruh_jedlaDAO();
     }
-    @Before
-    public void setUp() throws Exception {
-    }
 
-    @After
-    public void tearDown() throws Exception {
-    }
-    @Test(expected = EntityNotFoundException.class)
+  //  @Test(expected = EntityNotFoundException.class)
     public void testGetById() {
-        druh_jedlaDAO.getById(-1);
+      //  druh_jedlaDAO.getById(-1);
 
 
-} @Test
+}
+@Test
     public void testUpdate (){
         Druh_jedla dj = druh_jedlaDAO.getById(1L);
         dj.setType("dfd");
@@ -37,6 +35,13 @@ public class MysqlDruh_jedlaTest {
         Druh_jedla up = druh_jedlaDAO.getById(1L);
         assertEquals(up.getType(),"dfd");
     }
+    @Test
+    public void testGetAll() {
+        List<Druh_jedla> druh_jedlas = druh_jedlaDAO.getAll();
+        assertTrue(druh_jedlas.size() > 0);
+        assertNotNull(druh_jedlaDAO.getAll());
+    }
+
     @Test
     public void testInsert(){
 

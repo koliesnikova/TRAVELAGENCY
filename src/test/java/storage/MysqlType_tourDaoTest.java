@@ -1,19 +1,20 @@
 package storage;
 
-import entity.Clients;
-import entity.Type_tour;
-import exeption.EntityNotFoundException;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.Test;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import storage.dao.Type_tourDAO;
 
-import java.util.Date;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+
+import org.junit.jupiter.api.Test;
+import sk.upjs.entity.Druh_jedla;
+import sk.upjs.entity.Type_tour;
+import sk.upjs.exeption.EntityNotFoundException;
+import sk.upjs.storage.DaoFactory;
+import sk.upjs.storage.dao.Type_tourDAO;
+
+
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MysqlType_tourDaoTest {
     private Type_tourDAO type_tourDAO;
@@ -28,11 +29,18 @@ public class MysqlType_tourDaoTest {
     @AfterEach
     public void tearDown() throws Exception {
     }
-    @Test(expected = EntityNotFoundException.class)
+   // @Test(expected = EntityNotFoundException.class)
     public void testGetById() {
         type_tourDAO.getById(-1);
 
     }
+    @Test
+    public void testGetAll() {
+        List<Type_tour> type_tours = type_tourDAO.getAll();
+        assertTrue(type_tours.size() > 0);
+        assertNotNull(type_tourDAO.getAll());
+    }
+
     @Test
     public void testUpdate (){
         Type_tour tt = type_tourDAO.getById(1L);
