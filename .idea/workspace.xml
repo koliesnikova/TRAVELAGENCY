@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b458666e-5b63-445c-93a0-fb0a35ed92ac" name="Changes" comment="1:5">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/ClientSceneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/InfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/MainScene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/MainSceneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/PredajSceneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/TourSceneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/TravelAgency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/TourDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/APP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/APP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Clients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Druh_jedla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Druh_jedla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Predaj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Predaj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Tour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Type_tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Type_tour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Type_umiestnenia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Type_umiestnenia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exeption/EntityNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/exeption/EntityNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exeption/EntityUndeletableException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/exeption/EntityUndeletableException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlClientsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlClientsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlDruh_jedlaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlDruh_jedlaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlHotelDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlHotelDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlPredajDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlPredajDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlTourDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlTourDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlType_tourDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlType_tourDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlType_umiestneniaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlType_umiestneniaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/ClientsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/ClientsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/Druh_jedlaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/Druh_jedlaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/HotelDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/HotelDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/PredajDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/PredajDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/TourDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/Type_tourDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/Type_tourDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/Type_umiestneniaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/Type_umiestneniaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/models/BookedToursFXmodel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sk.upjs.gui/BookedToursFXmodel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/models/ClientsFXmodel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sk.upjs.gui/ClientsFXmodel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/models/OProjekteFXmodel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sk.upjs.gui/MainScene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/models/PredajFXmodel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sk.upjs.gui/PredajFXmodel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/models/ToursFXmodel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sk.upjs.gui/ToursFXmodel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlClientsDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlClientsDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlDruh_jedlaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlDruh_jedlaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlHotelDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlHotelDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlPredajDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlPredajDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlTourDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlTourDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlType_tourDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlType_tourDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlType_umiestneniaDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlType_umiestneniaDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/APP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Clients.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Druh_jedla.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Hotel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Predaj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Tour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Type_tour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Type_umiestnenia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exeption/EntityNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exeption/EntityUndeletableException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/BookedToursFXmodel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/ClientsFXmodel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/OProjekteFXmodel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/PredajFXmodel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/ToursFXmodel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/DaoFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlClientsDao$ClientsRowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlClientsDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlDruh_jedlaDao$DruhRowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlDruh_jedlaDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlHotelDao$HotelRowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlHotelDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlPredajDao$PredajRowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlPredajDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlTourDao$TourRowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlTourDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlType_tourDao$TourRowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlType_tourDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlType_umiestneniaDao$UmiestRowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlType_umiestneniaDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/ClientsDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/Druh_jedlaDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/HotelDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/PredajDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/TourDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/Type_tourDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/Type_umiestneniaDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlClientsDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlClientsDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlDruh_jedlaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlDruh_jedlaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlHotelDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlHotelDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlPredajDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlPredajDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlTourDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlTourDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlType_tourDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlType_tourDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlType_umiestneniaDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlType_umiestneniaDaoTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="21yjOUoTvm3zmmRnaEIX3OeEEmb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="15" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/junit/junit/3.8.1" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="sk.upjs.gui" />
+      <recent name="" />
+      <recent name="gui" />
+      <recent name="storage" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\UPJS\TRAVELAGENCY\src\main\java\gui" />
+      <recent name="D:\UPJS\TRAVELAGENCY\sql" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\UPJS\TRAVELAGENCY\src\main\resources\gui" />
+      <recent name="D:\UPJS\TRAVELAGENCY\src\main\java" />
+      <recent name="D:\UPJS\TRAVELAGENCY\src\main\sk.upjs" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="gui" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="storage" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="TravelAgency" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.TravelAgency (1)">
+    <configuration name="TravelAgency (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-15.0.1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="sk.upjs.gui.TravelAgency" />
+      <module name="TRAVELAGENCY" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sk.upjs.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TravelAgency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_271\jre" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="TravelAgency" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TravelAgency1" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-15.0.1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="TravelAgency" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MysqlClientsDaoTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TRAVELAGENCY" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="storage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="storage" />
+      <option name="MAIN_CLASS_NAME" value="storage.MysqlClientsDaoTest" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MysqlClientsDaoTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TRAVELAGENCY" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="storage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="storage" />
+      <option name="MAIN_CLASS_NAME" value="storage.MysqlClientsDaoTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="storage in TRAVELAGENCY" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TRAVELAGENCY" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="storage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="storage" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.TravelAgency (1)" />
+      <item itemvalue="Application.TravelAgency" />
+      <item itemvalue="Application.TravelAgency1" />
+      <item itemvalue="JUnit.MysqlClientsDaoTest.testDelete" />
+      <item itemvalue="JUnit.MysqlClientsDaoTest.testInsert" />
+      <item itemvalue="JUnit.storage in TRAVELAGENCY" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TravelAgency (1)" />
+        <item itemvalue="Application.TravelAgency1" />
+        <item itemvalue="Application.TravelAgency" />
+        <item itemvalue="JUnit.storage in TRAVELAGENCY" />
+        <item itemvalue="JUnit.MysqlClientsDaoTest.testDelete" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b458666e-5b63-445c-93a0-fb0a35ed92ac" name="Changes" comment="" />
+      <created>1638920193246</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638920193246</updated>
+    </task>
+    <task id="LOCAL-00001" summary="lol">
+      <created>1639580905409</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639580905409</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new">
+      <created>1639607387378</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639607387378</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1:5">
+      <created>1639613146977</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639613146977</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1:5">
+      <created>1639774559069</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639774559069</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1:5">
+      <created>1639774598360</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639774598360</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lol" />
+    <MESSAGE value="new" />
+    <MESSAGE value="1:5" />
+    <option name="LAST_COMMIT_MESSAGE" value="1:5" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TRAVELAGENCY$storage_in_TRAVELAGENCY.ic" NAME="storage in TRAVELAGENCY Coverage Results" MODIFIED="1640086011958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>storage.*</FILTER>
+    </SUITE>
+  </component>
+</project>

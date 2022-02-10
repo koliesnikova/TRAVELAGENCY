@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="853.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="102.0" prefWidth="854.0" style="-fx-background-color: #312E2E;" AnchorPane.bottomAnchor="448.6" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-0.39999999999997726" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="tour" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: #312E2E;" text="TOUR" textFill="WHITE" AnchorPane.bottomAnchor="26.200000000000003" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="726.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="clients" layoutX="156.0" layoutY="25.0" mnemonicParsing="false" style="-fx-background-color: #312E2E;" text="CLIENTS" textFill="WHITE" AnchorPane.bottomAnchor="26.200000000000003" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="578.4" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="predaj" layoutX="306.0" layoutY="25.0" mnemonicParsing="false" style="-fx-background-color: #312E2E;" text="PREDAJ" textFill="#fffefe" AnchorPane.bottomAnchor="26.200000000000003" AnchorPane.leftAnchor="306.0" AnchorPane.rightAnchor="434.79999999999995" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="oProjekte" contentDisplay="TOP" layoutX="632.0" layoutY="25.0" mnemonicParsing="false" style="-fx-background-color: #FFA31A;" text="O PROJEKTE" textFill="#050505" textOverrun="CLIP" AnchorPane.bottomAnchor="26.200000000000003" AnchorPane.leftAnchor="632.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bookedTours" layoutX="441.0" layoutY="25.0" mnemonicParsing="false" style="-fx-background-color: #312E2E;" text="INFO" textFill="WHITE" AnchorPane.bottomAnchor="26.200000000000003" AnchorPane.leftAnchor="441.0" AnchorPane.rightAnchor="299.79999999999995" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextArea layoutX="71.0" layoutY="140.0" prefHeight="326.0" prefWidth="710.0" text="                                                TRAVEL AGENCY&#10;Tento projekt vznikol s cieľom nájsť vhodný zájazd pre akýkoľvek typ cestovania.&#10;S ním si môžete vybrať prehliadku pre seba s akýmikoľvek ďalšími možnosťami&#10;ako napríklad:type umestnenia , druh jedla, type touru .                                      &#10;Výberom akejkoľvek prehliadky z navrhovaných môžete zmeniť možnosti, &#10;ktoré pre vás nie sú vhodné alebo si vybrať plnohodnotnú prehliadku.&#10;&#10;Tento projekt bol urobeny  na predmete Paz1C &#10;by Vitkovska Anastasiia a Koliesnikova Olha" AnchorPane.bottomAnchor="84.60000000000002" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="71.60000000000002" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
