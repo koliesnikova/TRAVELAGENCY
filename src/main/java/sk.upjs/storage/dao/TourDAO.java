@@ -16,7 +16,10 @@ public interface TourDAO {
 
     Tour save(Tour tour) throws EntityNotFoundException;
 
+    Tour idByName(Long s1, String date);
+
     Tour delete(long id) throws EntityNotFoundException, EntityUndeletableException;
 
     void deleteAllByDruhJedla(Druh_jedla druh_jedla);
+
 }

@@ -11,4 +11,9 @@ public interface ClientsDAO {
     Clients getById(long id) throws EntityNotFoundException;
     Clients save(Clients clients) throws EntityNotFoundException;
     Clients delete(long id) throws EntityNotFoundException, EntityUndeletableException;
+
+
+
+
+    Clients idByName(String name, String priezvisko);
 }

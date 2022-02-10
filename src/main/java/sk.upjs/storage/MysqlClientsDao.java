@@ -98,6 +98,19 @@ public class MysqlClientsDao implements ClientsDAO{
         }
         return clients;
     }
+    @Override
+    public Clients idByName(String name, String priezvisko) {
+        //try {
+
+        String sql = "Select id from clients where meno = ? and priezvisko=? ";
+        System.out.println(name);
+        return jdbcTemplate.queryForObject( sql, new TourRowMapper2(),name,priezvisko);
+
+        //   } catch (DataAccessException e) {
+        //     throw new EntityNotFoundException("empty for refresh");
+
+        //}
+    }
 
     private class ClientsRowMapper implements RowMapper<Clients> {
         @Override
@@ -109,6 +122,14 @@ public class MysqlClientsDao implements ClientsDAO{
             String adressa = rs.getString("adressa");
             String cislo = rs.getString("cislo");
             return new Clients(id, meno, priezvisko, dat_nar, adressa, cislo);
+        }
+
+    }
+    private class TourRowMapper2 implements RowMapper<Clients> {
+        @Override
+        public Clients mapRow(ResultSet rs, int rowNum) throws SQLException {
+            long id = rs.getLong("id");
+            return new Clients(id);
         }
 
     }

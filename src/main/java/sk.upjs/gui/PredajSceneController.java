@@ -5,10 +5,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
-import java.util.ResourceBundle;
+import java.util.*;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -19,16 +16,19 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import sk.upjs.entity.Clients;
 import sk.upjs.entity.Predaj;
 import sk.upjs.entity.Tour;
+import sk.upjs.entity.Type_tour;
 import sk.upjs.exeption.EntityUndeletableException;
 import sk.upjs.storage.DaoFactory;
 import sk.upjs.storage.dao.ClientsDAO;
 import sk.upjs.storage.dao.PredajDAO;
 import sk.upjs.storage.dao.TourDAO;
+import sk.upjs.storage.dao.Type_tourDAO;
 
 public class PredajSceneController extends Controller {
     private PredajDAO predajDAO = DaoFactory.INSTANCE.getPredajDAO();
     private ClientsDAO clientsDAO = DaoFactory.INSTANCE.getClientsDAO();
     private TourDAO tourDAO = DaoFactory.INSTANCE.getTourDAO();
+    private Type_tourDAO type_tourDAO = DaoFactory.INSTANCE.getType_tourDAO();
 
     @FXML
     private ResourceBundle resources;
@@ -269,6 +269,25 @@ public class PredajSceneController extends Controller {
         predajTour.setItems(predajObservableList);
         client_combo.setItems(clientsObservableList);
         tour_combo.setItems(tourObservableList);
+        client_combo.setOnAction(event -> {
+            String s = String.valueOf(client_combo.getSelectionModel().getSelectedItem());
+            String[] words = s.split(" ");
+
+            System.out.println( words[0]);
+           Clients idBy = (clientsDAO.idByName(words[0],words[1]));
+            System.out.println(idBy);
+        client_field.setText(String.valueOf(idBy));
+        });
+        tour_combo.setOnAction(event -> {
+            String s1 = String.valueOf(tour_combo.getSelectionModel().getSelectedItem());
+            System.out.println(s1);
+            String[] words = s1.split(" ");
+            Type_tour tt = (type_tourDAO.idByName(words[0]));
+            System.out.println(tt);
+           Tour iddj = (tourDAO.idByName(tt.getId(),words[1])) ;
+            System.out.println(iddj);
+           tour_field.setText(String.valueOf(iddj));
+        });
         predajTour.setRowFactory(tv -> {
             TableRow<Predaj> row = new TableRow<>();
             row.setOnMouseClicked(event -> {

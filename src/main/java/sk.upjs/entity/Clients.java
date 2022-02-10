@@ -22,13 +22,20 @@ public class Clients  {
 
     }
 
+    public Clients(long id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
-        return
 
-                  meno + "    "   +
-                 priezvisko + "   " ;
-
+if (meno !=null && priezvisko!=null) {
+    return meno + " " +
+            priezvisko;
+} else
+{
+    return String.valueOf(id);
+}
 
     }
 

@@ -5,107 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b458666e-5b63-445c-93a0-fb0a35ed92ac" name="Changes" comment="1:5">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/ClientSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/InfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/MainScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/MainSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/PredajSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/TourSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/TravelAgency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/TourDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_17_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/APP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/APP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Clients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Druh_jedla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Druh_jedla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Predaj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Predaj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Type_tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Type_tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Type_umiestnenia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Type_umiestnenia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exeption/EntityNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/exeption/EntityNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exeption/EntityUndeletableException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/exeption/EntityUndeletableException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlClientsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlClientsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlDruh_jedlaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlDruh_jedlaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlHotelDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlHotelDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlPredajDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlPredajDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlTourDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlTourDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlType_tourDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlType_tourDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MysqlType_umiestneniaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlType_umiestneniaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/ClientsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/ClientsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/Druh_jedlaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/Druh_jedlaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/HotelDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/HotelDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/PredajDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/PredajDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/TourDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/Type_tourDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/Type_tourDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/dao/Type_umiestneniaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/Type_umiestneniaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/models/BookedToursFXmodel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sk.upjs.gui/BookedToursFXmodel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/models/ClientsFXmodel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sk.upjs.gui/ClientsFXmodel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/models/OProjekteFXmodel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sk.upjs.gui/MainScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/models/PredajFXmodel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sk.upjs.gui/PredajFXmodel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/models/ToursFXmodel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sk.upjs.gui/ToursFXmodel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlClientsDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlClientsDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlDruh_jedlaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlDruh_jedlaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlHotelDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlHotelDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlPredajDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlPredajDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlTourDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlTourDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlType_tourDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlType_tourDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/storage/MysqlType_umiestneniaDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/storage/MysqlType_umiestneniaDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/APP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Clients.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Druh_jedla.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Hotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Predaj.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Tour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Type_tour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Type_umiestnenia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exeption/EntityNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exeption/EntityUndeletableException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/BookedToursFXmodel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/ClientsFXmodel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/OProjekteFXmodel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/PredajFXmodel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/ToursFXmodel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/DaoFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlClientsDao$ClientsRowMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlClientsDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlDruh_jedlaDao$DruhRowMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlDruh_jedlaDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlHotelDao$HotelRowMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlHotelDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlPredajDao$PredajRowMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlPredajDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlTourDao$TourRowMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlTourDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlType_tourDao$TourRowMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlType_tourDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlType_umiestneniaDao$UmiestRowMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/MysqlType_umiestneniaDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/ClientsDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/Druh_jedlaDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/HotelDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/PredajDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/TourDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/Type_tourDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/dao/Type_umiestneniaDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlClientsDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlClientsDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlDruh_jedlaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlDruh_jedlaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlHotelDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlHotelDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlPredajDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlPredajDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlTourDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlTourDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlType_tourDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlType_tourDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/storage/MysqlType_umiestneniaDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/storage/MysqlType_umiestneniaDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Clients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Tour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/PredajSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/PredajSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlClientsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlClientsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlTourDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlTourDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/ClientsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/ClientsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/TourDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/TourDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/entity/Clients.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/entity/Clients.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/entity/Tour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/entity/Tour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/gui/PredajSceneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/gui/PredajSceneController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlClientsDao$ClientsRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlClientsDao$ClientsRowMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlClientsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlClientsDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlTourDao$TourRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlTourDao$TourRowMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlTourDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlTourDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/storage/dao/ClientsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/storage/dao/ClientsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/storage/dao/TourDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/storage/dao/TourDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,7 +258,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639774598360</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1:5">
+      <created>1644499933540</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1644499933540</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1:5">
+      <created>1644500049881</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1644500049881</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

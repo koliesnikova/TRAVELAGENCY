@@ -40,9 +40,13 @@ public class Tour {
 
     @Override
     public String toString() {
+        if (type_tour !=null && date_begin!=null) {
+
         return
-                String.valueOf(type_tour)
+                String.valueOf(type_tour) +" "+ date_begin
                 ;
+    } else {
+        return String.valueOf(id);}
     }
 
     public Long getId() {

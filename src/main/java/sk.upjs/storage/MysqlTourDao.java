@@ -88,6 +88,13 @@ public class MysqlTourDao implements TourDAO {
 
         }
     }
+
+    @Override
+    public Tour idByName(Long s1, String date) {
+        String sql = "SELECT id FROM tour WHERE type_tour =? and date_begin=?";
+        return jdbcTemplate.queryForObject( sql, new TourRowMapper2(),s1,date);
+    }
+
     private class TourRowMapper implements RowMapper<Tour> {
         @Override
         public Tour mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -98,6 +105,16 @@ public class MysqlTourDao implements TourDAO {
             tour.setDate_end(rs.getDate("date_end"));
             tour.setDruh_jedla(DaoFactory.INSTANCE.getDruh_jedlaDAO().getById(rs.getLong("druh_jedla")));
             tour.setHotel(DaoFactory.INSTANCE.getHotelDAO().getById(rs.getLong("hotel")));
+            return tour;
+
+        }
+    }
+    private class TourRowMapper2 implements RowMapper<Tour> {
+        @Override
+        public Tour mapRow(ResultSet rs, int rowNum) throws SQLException {
+            Tour tour = new Tour();
+            tour.setId(rs.getLong("id"));
+
             return tour;
 
         }
