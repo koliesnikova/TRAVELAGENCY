@@ -6,22 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b458666e-5b63-445c-93a0-fb0a35ed92ac" name="Changes" comment="1:5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Clients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/entity/Tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/PredajSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/gui/PredajSceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlClientsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlClientsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlTourDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/MysqlTourDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/ClientsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/ClientsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/TourDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk.upjs/storage/dao/TourDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/entity/Clients.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/entity/Clients.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/entity/Tour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/entity/Tour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/gui/PredajSceneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/gui/PredajSceneController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlClientsDao$ClientsRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlClientsDao$ClientsRowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlClientsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlClientsDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlTourDao$TourRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlTourDao$TourRowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlTourDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/storage/MysqlTourDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/storage/dao/ClientsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/storage/dao/ClientsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/upjs/storage/dao/TourDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/upjs/storage/dao/TourDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRAVELAGENCY.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TRAVELAGENCY.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +60,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="15" />
-    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/junit/junit/3.8.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -198,8 +183,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.TravelAgency (1)" />
-      <item itemvalue="Application.TravelAgency" />
       <item itemvalue="Application.TravelAgency1" />
+      <item itemvalue="Application.TravelAgency" />
       <item itemvalue="JUnit.MysqlClientsDaoTest.testDelete" />
       <item itemvalue="JUnit.MysqlClientsDaoTest.testInsert" />
       <item itemvalue="JUnit.storage in TRAVELAGENCY" />
@@ -272,7 +257,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644500049881</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1:5">
+      <created>1644506655604</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1644506655604</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1:5">
+      <created>1644506728212</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1644506728212</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
